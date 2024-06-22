@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+Deutschland+Grundschrift&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+Norge&family=Roboto+Slab&display=swap');
 
 body {
     font-family: var(--paragraph-font);
@@ -12,7 +12,7 @@ body {
     --accent1-color: #bde0fe;
     --accent2-color: #a2d2ff;
 
-    --heading-font: 'Playwrite Deutschland Grundschrift', serif;
+    --heading-font: 'Playwrite Norge', serif;
     --paragraph-font: 'Roboto Slab', serif;
 
     --nav-background-color: #264653;
