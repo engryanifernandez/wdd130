@@ -7,10 +7,10 @@ body {
 }
 
 :root {
-    --primary-color: #8338ec;
-    --secondary-color: #ffafcc;
-    --accent1-color: #bde0fe;
-    --accent2-color: #a2d2ff;
+    --primary-color: #f72585;
+    --secondary-color: #7209b7;
+    --accent1-color: #3a0ca3;
+    --accent2-color: #4361ee;
 
     --heading-font: 'Playwrite Norge', serif;
     --paragraph-font: 'Roboto Slab', serif;
