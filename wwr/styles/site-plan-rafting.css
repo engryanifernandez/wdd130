@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+Norge&family=Roboto+Slab&display=swap');
 
 body {
     font-family: var(--paragraph-font);
@@ -12,8 +12,8 @@ body {
     --accent1-color: #3a0ca3;
     --accent2-color: #4361ee;
 
-    --heading-font: 'Rock Salt, Bradley Hand', cursive;
-    --paragraph-font: 'Roboto, Helvetica', sans-serif;
+    --heading-font: 'Playwrite Norge', cursive;
+    --paragraph-font: 'Roboto Slab', serif;
 
     --nav-background-color: #264653;
     --nav-link-color: #2a9d8f;
