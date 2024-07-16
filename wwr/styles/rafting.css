@@ -1,0 +1,170 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Metamorphous&family=Roboto+Slab&display=swap');
+
+/* Define CSS variable */
+:root {
+    --primary-color: #f72585;
+    --secondary-color: #7209b7;
+    --accent1-color: #3a0ca3;
+    --accent2-color: #4361ee;
+    --font-color: #333333;
+    --background-color: #FFFFFF;
+
+    --heading-font: 'Metamorphous', sans-serif;
+    --paragraph-font: 'Roboto Slab', serif;
+
+    --nav-background-color: #264653;
+    --nav-link-color: #2a9d8f;
+    --nav-hover-link-color: #e9c46a;
+    --nav-hover-background-color: #e76f51;
+
+}
+
+/* General styles */
+body {
+    font-family: var(--paragraph-font);
+    color: var(--font-color);
+    background-color: var(--background-color);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    color: white;
+    padding: 1rem;
+    justify-content: space-between ;
+}
+
+header img {
+    max-height: 500px;
+}
+
+nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    height: 400px;
+
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+.hero h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    position: absolute;
+    top: 10%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: rgba(0,0,0,0.5);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Article Styles */
+.hero article {
+    display: flex;
+    position: absolute;
+    bottom: 40px;
+    background-color: rgba(22, 0, 23, 0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    right: 10px;
+    left: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+article p {
+    font-size: 1.2em;
+    color: white;
+    text-align: right;
+   
+}
+
+.hero article img {
+    max-height: 100px;
+    margin-right: 10px;
+    float: right;
+    margin-left: 10px;    
+}
+
+
+
+/* Section Styles */
+section {
+    margin: 40px 0;
+}
+
+section h2 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+section p {
+    font-size: 1em;
+    color: var(--font-color);
+}
+
+/* Image Gallery */
+section img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer .sociallinks a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .sociallinks img {
+    max-height: 30px;
+}
+
+footer nav a {
+    margin: 0 10px;
+}
+
+footer nav img {
+    width: 20px;
+    height: 20px;
+}
