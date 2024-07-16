@@ -121,7 +121,6 @@ section {
 section h2 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
-    margin-bottom: 20px;
 }
 section p {
     font-size: 1em;
@@ -130,7 +129,6 @@ section p {
 
 /* Image Gallery */
 section img {
-    width: 100%;
     height: auto;
     margin: 10px 0;
 }
@@ -141,10 +139,9 @@ main {
 
 /* Footer Styles */
 footer {
-    text-align: center;
+    margin-left: 2%;
     padding: 10px 0;
-    background-color: var(--primary-color);
-    color: var(--background-color);
+    color: var(--accent1-color);
 }
 
 footer p {
@@ -153,18 +150,14 @@ footer p {
 
 footer .sociallinks a {
     text-decoration: none;
-    margin: 0 10px;
+
 }
 
 footer .sociallinks img {
-    max-height: 30px;
+    max-height: 100px;
 }
 
 footer nav a {
-    margin: 0 10px;
+    margin: 10px 0;
 }
 
-footer nav img {
-    width: 20px;
-    height: 20px;
-}
