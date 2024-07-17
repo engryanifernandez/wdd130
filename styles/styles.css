@@ -53,7 +53,7 @@ aside h2 {
     font-family: var(--heading-font);
     position: absolute;
     top: 50px;
-    left: 100px;
+    left: 150px;
     color: white;
     text-shadow: 5px 1px 6px red;
     font-size: 1.7rem;
