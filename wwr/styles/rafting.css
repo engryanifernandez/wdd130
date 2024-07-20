@@ -34,21 +34,69 @@ body {
 header {
     color: white;
     padding: 1rem;
-    justify-content: space-between ;
+    justify-content: space-evenly;
+    margin: 1rem auto;
+    align-items: center;
+    border: 1px solid #ccc;
+    background-color: #f725a7;
+    display: grid;
+    grid-template-columns: 120px 1fr 2fr;
+    border: 2px solid #c1c1c1;
+    
 }
 
 header img {
     max-height: 500px;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px rgb(80, 4, 87);
 }
+
+nav {
+	text-align: right;
+}
+
+
+
 
 nav a {
     color: var(--secondary-color);
     text-decoration: none;
     margin: 0 1rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex: 1 1 100%;
+   
 }
 
 nav a:hover {
     text-decoration: underline;
+}
+
+section {
+    border: 2px solid #c1c1c1;
+    padding: 2rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+.center-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-image img {
+    margin: 0 10px;
+    padding: 10px;
+    max-height: 420px;
 }
 
 /* Hero Section */
@@ -131,6 +179,32 @@ section p {
 section img {
     height: auto;
     margin: 10px 0;
+}
+
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+
+img {
+    max-width: 220px;
+    max-height: 150px;
+}
+
+image-grid {
+    display: grid;
+    grid-template-columns: repeat(5,fr);
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
 }
 
 main {
