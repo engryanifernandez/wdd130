@@ -133,7 +133,7 @@ section {
 
 
 .hero article img {
-    max-height: 100px;
+    max-height: 150px;
     margin-right: 10px;
     float: right;
     margin-left: 10px;    
@@ -208,11 +208,15 @@ section img {
 
 
 figcaption {
-    background-color: rgb(207, 132, 132);
+    background-color: rgb(84, 11, 11);
     color: #fff;
-    font: italic smaller sans-serif;
+    font-family: var(--paragraph-font);
+    font-style: italic;
+    font-size: small;
     padding: 3px;
     text-align: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 
