@@ -34,7 +34,6 @@ header {
     color: white;
     padding: 1rem;
     margin: 1rem auto;
-    border: 1px solid #ccc;
     background-color: #f725a7;
     border: 2px solid #c1c1c1;
     display: grid;
@@ -49,7 +48,7 @@ header img {
     padding: 2px;
     box-shadow: 0 0 30px rgb(80, 4, 87);
     align-items: center;
-    grid-column: 2/2;
+    grid-column: 2/3;
     grid-row: 2/5;
 }
 
@@ -74,17 +73,11 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    list-style: none;
     flex: 1 1 100%;
 }
 
 nav a:hover {
     text-decoration: underline;
-}
-
-section {
-    border: 2px solid #c1c1c1;
-    padding: 2rem;
 }
 
 /* Hero Section */
@@ -164,8 +157,9 @@ article p {
 
 /* Section Styles */
 section {
+    border: 2px solid #c1c1c1;
+    padding: 2rem;
     margin: 40px 0;
-
 }
 
 section h2 {
