@@ -17,7 +17,6 @@
     --nav-link-color: #2a9d8f;
     --nav-hover-link-color: #e9c46a;
     --nav-hover-background-color: #e76f51;
-
 }
 
 /* General styles */
@@ -34,36 +33,42 @@ body {
 header {
     color: white;
     padding: 1rem;
-    justify-content: space-evenly;
     margin: 1rem auto;
-    align-items: center;
     border: 1px solid #ccc;
     background-color: #f725a7;
-    display: grid;
-    grid-template-columns: 120px 1fr 2fr;
     border: 2px solid #c1c1c1;
-    
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 5px 1fr 1fr 1fr 5px;
 }
 
+
 header img {
-    max-height: 500px;
+    max-height: 150px;
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px rgb(80, 4, 87);
+    align-items: center;
+    grid-column: 2/2;
+    grid-row: 2/5;
 }
 
 nav {
-	text-align: right;
+	text-align: center;
+    grid-column: 4/8;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-row: 3/3;
+    justify-content: space-around;
+    background-color: white;
 }
-
-
 
 
 nav a {
     color: var(--secondary-color);
     text-decoration: none;
     margin: 0 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 0.5rem;
     font-weight: 700;
     display: flex;
@@ -71,7 +76,6 @@ nav a {
     align-items: center;
     list-style: none;
     flex: 1 1 100%;
-   
 }
 
 nav a:hover {
@@ -83,36 +87,18 @@ section {
     padding: 2rem;
 }
 
-h2 {
-    text-align: center;
-}
-
-.center-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.center-image img {
-    margin: 0 10px;
-    padding: 10px;
-    max-height: 420px;
-}
-
 /* Hero Section */
 .hero {
     text-align: center;
     width: 100%;
     position: relative;
     height: 400px;
-
 }
 
 .hero img {
     display: block;
     width: 100%;
     height: auto;
-
 }
 
 .hero h1 {
@@ -145,12 +131,6 @@ h2 {
     justify-content: center;
 }
 
-article p {
-    font-size: 1.2em;
-    color: white;
-    text-align: right;
-   
-}
 
 .hero article img {
     max-height: 100px;
@@ -159,11 +139,33 @@ article p {
     margin-left: 10px;    
 }
 
+.center-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-image img {
+    margin: 0 10px;
+    padding: 10px;
+    max-height: 420px;
+}
+
+h2 {
+    text-align: center;
+}
+
+article p {
+    font-size: 1.2em;
+    color: white;
+    text-align: right;
+}
 
 
 /* Section Styles */
 section {
     margin: 40px 0;
+
 }
 
 section h2 {
@@ -181,31 +183,39 @@ section img {
     margin: 10px 0;
 }
 
-figure {
-    border: thin #c0c0c0 solid;
+
+.grid-container {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grid-container figure {
+    border: thin #c0c0c0 solid;
     padding: 5px;
     max-width: 220px;
-    margin: auto;
+    margin: 0;
+    align-items: center;
+    display: flex;
+    flex-flow: column;
 }
 
-img {
-    max-width: 220px;
-    max-height: 150px;
+.grid-container img {
+    max-width: 200px;
+    height: auto;
+    align-items: center;
 }
 
-image-grid {
-    display: grid;
-    grid-template-columns: repeat(5,fr);
-}
 
 figcaption {
-    background-color: #222;
+    background-color: rgb(207, 132, 132);
     color: #fff;
     font: italic smaller sans-serif;
     padding: 3px;
     text-align: center;
 }
+
+
 
 main {
     padding: 20px;
@@ -213,22 +223,37 @@ main {
 
 /* Footer Styles */
 footer {
-    margin-left: 2%;
     padding: 10px 0;
     color: var(--accent1-color);
+    background-color: #f725a7;
+    justify-content: space-between;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);  
 }
+
 
 footer p {
     margin: 10px 0;
+    grid-column: 1/4;
+    text-align: right;
+}
+
+footer .sociallinks {
+    display: flex;
+    align-content: right;
+    grid-column: 4/5;
+    grid-row: 1/1;
+    background-color: transparent;
+    border: transparent;
 }
 
 footer .sociallinks a {
     text-decoration: none;
-
 }
 
 footer .sociallinks img {
-    max-height: 100px;
+    max-height: 50px;
 }
 
 footer nav a {
