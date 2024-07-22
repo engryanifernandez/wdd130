@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Metamorphous&family=Roboto+Slab&display=swap');
+
+/* Define CSS variable */
+:root {
+    --primary-color: #f72585;
+    --secondary-color: #7209b7;
+    --accent1-color: #3a0ca3;
+    --accent2-color: #4361ee;
+    --font-color: #333333;
+    --background-color: #FFFFFF;
+
+    --heading-font: 'Metamorphous', sans-serif;
+    --paragraph-font: 'Roboto Slab', serif;
+
+    --nav-background-color: #264653;
+    --nav-link-color: #2a9d8f;
+    --nav-hover-link-color: #e9c46a;
+    --nav-hover-background-color: #e76f51;
+}
+
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.form-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.form-title {
+    font-size: 15px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+form {
+    background: #fff;
+    width: 400px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    border: 1px solid rgb(32, 33, 34);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: var(--heading-font);
+    color: rgb(48, 92, 128);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-family: var(--paragraph-font);
+    
+}
+
+input[type="text"],
+textarea,
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+p {
+    font-family: var(--paragraph-font);
+    background-color: black;
+    color: white;
+    padding: 10px;
+    align-items: center;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+
+}
+
+label .bold-text {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: rgb(48, 92, 128);
+    font-family: var(--heading-font);
+}

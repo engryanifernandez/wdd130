@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML and CSS Quiz</title>
+        <meta name="description" content="This page is created by Hazel Diane Fernandez 
+        for WDD 130 course that contains information about the said author.">
+        <meta name="author" content ="Hazel Diane Fernandez">
+        <link rel="stylesheet" href="styles/quiz.css">
+    </head>
+    <body>
+        <div class="form-title">
+            <h1>Basic HTML and CSS Quiz</h1><br>
+        </div>
+        <div class="form-container">
+        <form action="#" method="post">
+                <!-- Question 1: Fill in the blank -->
+                <label for="q1"><span class="bold-text">1. </span>What does acronym CSS stand for?</label>
+                <input type="text" id="q1" name="q1" required>
+                <br><br>
+
+                <!-- Question 2: Short answer -->
+                <label for="q2"><span class="bold-text">2. </span>How are id and class attributes selected in CSS?</label>
+                <textarea id="q2" name="q2" rows="4" cols="50" required></textarea>
+                <br><br>
+
+                <!-- Question 3: Dropdown -->
+                <label for="q3"><span class="bold-text">3. </span>Which of the following is a valid CSS comment?</label>
+                <select id="q3" name="q3" required>
+                    <option value="" selected disabled>Choose One ...</option>
+                    <option value="bootstrap">// This is a comment</option>
+                    <option value="jquery">/* This is a comment */</option>
+                    <option value="react"># This is a comment</option>
+                </select>
+                <br><br>
+
+                <!-- Question 4: Number input -->
+                <label for="q4"><span class="bold-text">4. </span>What is the bottom margin given in this declaration?</label>
+                <p>margin: 10px 5px 15px; </p>
+                <input type="number" id="q4" name="q4" min="1" max="100" required>
+                <br><br>
+
+                <input type="submit" value="Submit Quiz">
+            </form>
+        </div>
+    </body>
+</html>
