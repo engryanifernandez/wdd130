@@ -143,8 +143,71 @@ nav a:hover {
     max-height: 420px;
 }
 
-h2 {
+h1, h2, h3 {
     text-align: center;
+}
+
+main p {
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.contact-info {
+    padding: 20px;
+    border: 2px solid #c1c1c1;
+    margin: 10px;
+    margin-top: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 20rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    height: 100%;
+    background-color: rgb(91, 7, 7);
+    color: white;
+    font-size: 1.0rem;
+}
+
+.bold-lit {
+    font-weight: bold;
+    font-family: var(--heading-font);
+}
+
+.map {
+    margin: 1rem;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    display: flex;
+    padding: 20px;
+}
+
+iframe {
+    width: 100%;
+    border: 2px solid #c1c1c1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.emp {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+.emp-assign {
+    text-decoration: underline;
+    font-style: normal;
+    font-size: 0.7rem;
 }
 
 article p {
@@ -199,7 +262,6 @@ section img {
     align-items: center;
 }
 
-
 figcaption {
     background-color: rgb(84, 11, 11);
     color: #fff;
@@ -211,8 +273,6 @@ figcaption {
     width: 100%;
     box-sizing: border-box;
 }
-
-
 
 main {
     padding: 20px;
@@ -256,3 +316,54 @@ footer nav a {
     margin: 10px 0;
 }
 
+.form-info {
+    padding: 0%;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(32, 33, 34);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.radio-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.radio-container input[type="radio"] {
+    margin-right: 10px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
