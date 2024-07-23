@@ -179,6 +179,7 @@ main p {
 .bold-lit {
     font-weight: bold;
     font-family: var(--heading-font);
+    color: white;
 }
 
 .map {
