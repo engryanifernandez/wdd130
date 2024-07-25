@@ -42,7 +42,6 @@ header {
     grid-template-rows: 5px 1fr 1fr 1fr 5px;
 }
 
-
 header img {
     max-height: 150px;
     border: 1px solid steelblue;
@@ -69,7 +68,6 @@ nav {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
-
 nav a {
     color: #e7dbdb; 
     text-shadow: 3px 1px 2px black, 3px 0 5px white;
@@ -90,7 +88,6 @@ nav a:hover {
     border-radius: 4px; 
 }
 
-/* Hero Section */
 .hero {
     text-align: center;
     width: 100%;
@@ -120,7 +117,6 @@ nav a:hover {
     color: #fff;
 }
 
-/* Article Styles */
 .hero article {
     display: flex;
     position: absolute;
@@ -135,7 +131,6 @@ nav a:hover {
     justify-content: center;
     text-shadow: 3px 1px 2px black;
 }
-
 
 .hero article img {
     max-height: 150px;
@@ -156,11 +151,7 @@ nav a:hover {
     max-height: 420px;
 }
 
-h1, h2, h3 {
-    text-align: center;
-}
-
-main p {
+h1, h2, h3, main p {
     text-align: center;
 }
 
@@ -173,6 +164,8 @@ main p {
     color: #eeb32a;
     text-shadow: 4px 3px 3px rgb(68, 2, 2), 3px 0px 2px rgb(185, 61, 61);
     font-size: 1.5rem;
+    font-weight: bold;
+    font-family: var(--heading-font);
 }
 
 .contact-container {
@@ -212,22 +205,6 @@ main p {
     text-align: center; 
 }
 
-.contact-info a {
-     /* Ensure link color matches navigation */
-    text-decoration: underline;
-}
-
-.contact-info a:hover {
-    color: var(--accent1-color);
-    text-decoration: underline;
-}
-
-.bold-lit {
-    font-weight: bold;
-    font-family: var(--heading-font);
-    color: white;
-}
-
 .map {
     flex: 1;
     margin: 20px;
@@ -240,23 +217,11 @@ main p {
     justify-content: center;
 }
 
-iframe {
-    width: 100%;
-    border: 0;
-    border-radius: 8px;
-}
-
 .emp {
     font-weight: bold;
     font-style: normal;
     font-size: 1.2rem;
     text-shadow: 3px 1px 2px black, 3px 0 5px white;
-}
-
-.emp-assign {
-    text-decoration: underline;
-    font-style: normal;
-    font-size: 0.7rem;
 }
 
 article p {
@@ -265,8 +230,6 @@ article p {
     text-align: right;
 }
 
-
-/* Section Styles */
 section {
     border: 2px solid #c1c1c1;
     padding: 2rem;
@@ -278,7 +241,7 @@ section {
     background-size: cover;
 }
 
-.meet-staff-container {
+.meet-staff-container, .grid-container {
     align-items: center;
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.6), 
@@ -307,30 +270,10 @@ section {
     margin-left: 60px;
 }
 
-.meet-staff-container img {
+.meet-staff-container img, .grid-container img {
     max-width: 200px;
-    height: 200px;
     align-items: center;
     display: block; 
-    width: 100%; 
- 
-}
-
-.grid-container {
-    align-items: center;
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.6), 
-        rgba(0, 0, 0, 0.6) 
-    );
-    background-size: cover;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px; 
-    justify-content: center; 
-    padding: 0px; 
-    max-width: 1200px; 
-    margin: 0 auto; 
-    border-radius: 8px;
 }
 
 .grid-container figure {
@@ -342,14 +285,6 @@ section {
     display: flex;
     flex-flow: column;
     justify-content: space-evenly;
- 
-}
-
-.grid-container img {
-    max-width: 200px;
-    height: 200px;
-    align-items: center;
-    display: block; 
 }
 
 figcaption {
@@ -372,13 +307,9 @@ figcaption {
 }
 
 main {
-    padding: 20px;
-    
+    padding: 20px; 
 }
 
-main h1{
-    text-shadow: 3px 1px 2px rgb(253, 249, 249);
-}
 /* Footer Styles */
 footer {
     padding: 10px 0;
@@ -390,7 +321,6 @@ footer {
     display: grid;
     grid-template-columns: repeat(4, 25%);  
 }
-
 
 footer p {
     margin: 10px 0;
@@ -409,27 +339,15 @@ footer .sociallinks {
     box-shadow: none;
 }
 
-footer .sociallinks a {
-    text-decoration: none;
-}
-
 footer .sociallinks a:hover {
     text-decoration: none;
     background-color: transparent;
 }
 
-
 footer .sociallinks img {
     max-height: 50px;
 }
 
-footer nav a {
-    margin: 10px 0;
-}
-
-.form-info {
-    padding: 20px;
-}
 .form-container {
     display: flex;
     flex-direction: column;
@@ -458,20 +376,12 @@ form {
     font-size: 1.2rem;
 }
 
-.radio-container {
+.radio-container, .checkbox-container  {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
-.radio-container input[type="radio"] {
-    margin-right: 10px;
-}
-
-.checkbox-container {
-    display: flex;
-    align-items: center;
-}
-.checkbox-container input[type="checkbox"] {
+.radio-container input[type="radio"] , .checkbox-container input[type="checkbox"]{
     margin-right: 10px;
 }
 
@@ -492,19 +402,11 @@ button[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-
 .wireframe {
     position: relative;
     grid-column: 1 / -1; 
     justify-self: center; 
     align-self: center; 
-
-}
-
-.wireframe p {
-    text-shadow: none;
-    color:white;
-    font-weight: bold;
 }
 
 .wireframe a {
@@ -809,7 +711,6 @@ button[type="submit"]:hover {
 }
 
 .grid-item {
-
     text-align: center;
     background-image: linear-gradient(
         to right,
@@ -856,24 +757,6 @@ button[type="submit"]:hover {
     font-size: 1.5rem;
 }
 
-.grid-item p {
-    font-family: var(--paragraph-font);
-    color: white;
-    text-shadow: 
-        1px 1px 2px rgba(0, 0, 0, 0.4), 
-        2px 2px 4px rgba(0, 0, 0, 0.6), 
-        3px 3px 6px rgba(0, 0, 0, 0.8); 
-    font-size: 1.2em;
-}
-
-
-
-.newsletter p {
-    text-shadow: 3px 3px 5px darkred, 0 0 5px rgba(178, 173, 173, 0.5);
-}
-
-
-/* Style for History Section */
 .history-section {
     background-image: url('../images/history-bg.jpg'); 
     background-size: cover; 
@@ -910,13 +793,14 @@ button[type="submit"]:hover {
 }
 
 /* Style for paragraph text */
-.history-section p {
+.history-section p, .grid-item p {
     color: #ffffff; 
     line-height: 1.6; 
     text-shadow: 
         1px 1px 2px rgba(0, 0, 0, 0.4), 
         2px 2px 4px rgba(0, 0, 0, 0.6), 
         3px 3px 6px rgba(0, 0, 0, 0.8); 
+    font-size: 1.2em;
 }
 
 /* Center the image in the paragraph and ensure text wraps around it */
@@ -955,14 +839,3 @@ button[type="submit"]:hover {
     z-index: 1; 
 }
 
-/* Style for figcaption */
-.grid-container figcaption {
-    color: #ffffff; 
-    text-shadow: 
-        1px 1px 2px rgba(0, 0, 0, 0.4), 
-        2px 2px 4px rgba(0, 0, 0, 0.6), 
-        3px 3px 6px rgba(0, 0, 0, 0.8); 
-    background: rgba(0, 0, 0, 0.5); 
-    padding: 10px; 
-    text-align: center;
-}
