@@ -154,26 +154,44 @@ main p {
 .contact-container {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1000px;
 }
 
 .contact-info {
     padding: 20px;
     border: 2px solid #c1c1c1;
-    margin: 10px;
-    margin-top: 150px;
-    margin-left: 100px;
-    margin-right: 100px;
     width: 20rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     height: 100%;
     background-color: #5b0707;
     color: white;
-    font-size: 1.0rem;
+    font-size: 1rem;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column; /* Ensures vertical stacking of content */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    text-align: center; /* Centers text within the container */
+}
+
+.contact-info a {
+     /* Ensure link color matches navigation */
+    text-decoration: underline;
+}
+
+.contact-info a:hover {
+    color: var(--accent1-color);
+    text-decoration: underline;
 }
 
 .bold-lit {
@@ -183,20 +201,22 @@ main p {
 }
 
 .map {
-    margin: 1rem;
-    text-align: center;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
+    flex: 1; /* Make the map take the remaining space */
+    margin: 20px 0;
+
+    border: 2px solid #c1c1c1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+
     display: flex;
-    padding: 20px;
+    justify-content: center;
 }
 
 iframe {
     width: 100%;
-    border: 2px solid #c1c1c1;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 0;
+    border-radius: 8px;
 }
 
 .emp {
@@ -244,7 +264,7 @@ section img {
 .grid-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .grid-container figure {
@@ -375,4 +395,173 @@ button[type="submit"]:hover {
     grid-column: 1 / -1; 
     justify-self: center; 
     align-self: center; 
+}
+
+/* Featured Trips Section */
+.featured-trips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.featured-trips .trip-card {
+    border: 2px solid #c1c1c1;
+    border-radius: 8px;
+    margin: 20px;
+    width: calc(33.333% - 40px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: var(--background-color);
+}
+
+.featured-trips .trip-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #c1c1c1;
+}
+
+.featured-trips .trip-card h3 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+.featured-trips .trip-card p {
+    padding: 0 10px 10px;
+    font-size: 1em;
+    color: var(--font-color);
+}
+
+.featured-trips .trip-card .cta-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    border: none;
+    border-radius: 0 0 8px 8px;
+}
+
+.featured-trips .trip-card .cta-button:hover {
+    background-color: var(--accent1-color);
+}
+
+.contact-link-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.contact-link-container a {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-link-container a:hover {
+    text-decoration: underline;
+}
+
+/* Style for the trips section */
+.trips {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color for the section */
+    text-align: center; /* Center the heading */
+}
+
+.trips h2 {
+    font-family: var(--heading-font);
+    color: #333;
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Flexbox layout for trips container */
+.trips-content {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to new lines */
+    justify-content: space-between; /* Distributes space between items */
+    gap: 20px; /* Space between items */
+}
+
+.trip {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center;
+    text-align: center;
+    width: calc(33% - 20px); /* Three columns, adjust width for spacing */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space between rows */
+}
+
+.trip img {
+    width: 100%;
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover; /* Cover the element while maintaining aspect ratio */
+    border-radius: 8px;
+}
+
+.trip h3 {
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+.trip p {
+    font-family: var(--paragraph-font);
+    font-size: 1rem;
+    color: #666;
+    padding: 0 10px 10px;
+}
+
+/* Style for the trips table section */
+.trips-table {
+    text-align: center; /* Center the heading and table */
+    margin: 20px auto; /* Center the section and add margin */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color for the section */
+    border-radius: 8px; /* Rounded corners for the section */
+}
+
+/* Style for the heading */
+.trips-table h2 {
+    margin-bottom: 20px; /* Add space between the heading and the table */
+    color: #333; /* Dark color for the heading text */
+}
+
+/* Style for the table */
+.trips-table table {
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the table horizontally */
+    border-collapse: collapse; /* Remove spacing between borders */
+    margin-bottom: 20px;
+}
+
+/* Style for table headings */
+.trips-table th {
+    background-color: #333; /* Dark background for table headers */
+    color: #fff; /* White text color for table headers */
+    padding: 10px; /* Add padding to table headers */
+    border: 2px solid #bea0a0; /* Light border for table headers */
+}
+
+/* Style for table cells */
+.trips-table td {
+    padding: 10px; /* Add padding to table cells */
+    border: 2px solid #bea0a0; /* Light border for table cells */
+    color: #666; /* Text color for table cells */
+}
+
+/* Style for table rows */
+.trips-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternating row color for better readability */
 }
