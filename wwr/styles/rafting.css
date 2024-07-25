@@ -22,10 +22,12 @@
 body {
     font-family: var(--paragraph-font);
     color: var(--font-color);
-    background-color: var(--background-color);
+    background-image: linear-gradient(to right, #cbcb7d, #f42be6); 
+    margin: 0;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0;
+    font-weight: bold;
 }
 
 /* Header Styles */
@@ -33,7 +35,8 @@ header {
     color: white;
     padding: 1rem;
     margin: 1rem auto;
-    background-color: #f725a7;
+    background-image: url('../images/header-background.gif');
+    background-size: cover;
     border: 2px solid #c1c1c1;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -58,12 +61,19 @@ nav {
     grid-template-columns: repeat(4,1fr);
     grid-row: 3/3;
     justify-content: space-around;
-    background-color: white;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.6), /* Semi-transparent black */
+        rgba(0, 0, 0, 0.6) /* Semi-transparent black */
+    );
+    padding: 10px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 
 nav a {
-    color: var(--secondary-color);
+    color: #e7dbdb; /* White text color for contrast */
+    text-shadow: 3px 1px 2px black, 3px 0 5px white;
     text-decoration: none;
     margin: 0 1rem;
     font-size: 1rem;
@@ -77,6 +87,8 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+    background-color: #0056b3; /* Darker color on hover */
+    border-radius: 4px; /* Slightly rounded corners on hover */
 }
 
 /* Hero Section */
@@ -106,6 +118,7 @@ nav a:hover {
     background-color: rgba(0,0,0,0.5);
     background-size: cover;
     background-position: center;
+    text-shadow: none;
 }
 
 /* Article Styles */
@@ -121,6 +134,7 @@ nav a:hover {
     left: 10px;
     align-items: center;
     justify-content: center;
+    text-shadow: 3px 1px 2px black;
 }
 
 
@@ -151,12 +165,36 @@ main p {
     text-align: center;
 }
 
+.send-message {
+    background-image: url('../images/contact-background.gif');
+    background-size: cover;
+}
+
+.send-message h2 {
+    color: #3bf8d2;
+    text-shadow: 
+        1px 1px 2px rgba(0, 0, 0, 0.6), 
+        2px 2px 4px rgba(0, 0, 0, 0.6), 
+        3px 3px 6px rgba(0, 0, 0, 0.8); 
+    font-size: 2rem;
+}
+
+.send-message p {
+    color: #eeb32a;
+    text-shadow: 4px 3px 3px rgb(68, 2, 2), 3px 0px 2px rgb(185, 61, 61);
+    font-size: 1.5rem;
+}
+
 .contact-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #fff;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.6), /* Semi-transparent black */
+        rgba(0, 0, 0, 0.6) /* Semi-transparent black */
+    );
+    background-size: cover;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
@@ -175,13 +213,13 @@ main p {
     background-color: #5b0707;
     color: white;
     font-size: 1rem;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 60px;
+    margin-right: 40px;
     display: flex;
-    flex-direction: column; /* Ensures vertical stacking of content */
-    justify-content: center; /* Centers content vertically */
-    align-items: center; /* Centers content horizontally */
-    text-align: center; /* Centers text within the container */
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
 }
 
 .contact-info a {
@@ -201,14 +239,13 @@ main p {
 }
 
 .map {
-    flex: 1; /* Make the map take the remaining space */
-    margin: 20px 0;
-
+    flex: 1;
+    margin: 20px;
+    width: 100%;
     border: 2px solid #c1c1c1;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
-
     display: flex;
     justify-content: center;
 }
@@ -223,6 +260,7 @@ iframe {
     font-weight: bold;
     font-style: normal;
     font-size: 1.2rem;
+    text-shadow: 3px 1px 2px black, 3px 0 5px white;
 }
 
 .emp-assign {
@@ -250,7 +288,7 @@ section h2 {
     color: var(--secondary-color);
 }
 section p {
-    font-size: 1em;
+    font-size: 1rem;
     color: var(--font-color);
 }
 
@@ -260,11 +298,73 @@ section img {
     margin: 10px 0;
 }
 
+.meet-staff {
+    background-image: url('../images/staff-background.gif');
+    background-size: cover;
+}
+
+.meet-staff h2{
+    color: white;
+    text-shadow: 
+        1px 1px 2px rgba(0, 0, 0, 0.6), 
+        2px 2px 4px rgba(0, 0, 0, 0.6), 
+        3px 3px 6px rgba(0, 0, 0, 0.8); 
+    font-size: 2rem;
+}
+
+.meet-staff-container {
+    align-items: center;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.6), /* Semi-transparent black */
+        rgba(0, 0, 0, 0.6) /* Semi-transparent black */
+    );
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px; /* Adjust the gap between grid items */
+    justify-content: center; /* Center items horizontally */
+    padding: 0px; /* Add padding around the grid */
+    max-width: 1200px; /* Optional: Set a max-width for large screens */
+    margin: 0 auto; /* Center grid container */
+    border-radius: 8px;
+}
+
+.meet-staff-container figure{
+    border: thin #c0c0c0 solid;
+    padding: 5px;
+    max-width: 220px;
+    margin: 0;
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    margin-left: 60px;
+}
+
+.meet-staff-container img {
+    max-width: 200px;
+    height: 200px;
+    align-items: center;
+    display: block; 
+    width: 100%; 
+ 
+}
 
 .grid-container {
-    display: flex;
     align-items: center;
-    justify-content: space-around;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.6), /* Semi-transparent black */
+        rgba(0, 0, 0, 0.6) /* Semi-transparent black */
+    );
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px; /* Adjust the gap between grid items */
+    justify-content: center; /* Center items horizontally */
+    padding: 0px; /* Add padding around the grid */
+    max-width: 1200px; /* Optional: Set a max-width for large screens */
+    margin: 0 auto; /* Center grid container */
+    border-radius: 8px;
 }
 
 .grid-container figure {
@@ -275,6 +375,8 @@ section img {
     align-items: center;
     display: flex;
     flex-flow: column;
+    justify-content: space-evenly;
+ 
 }
 
 .grid-container img {
@@ -286,6 +388,7 @@ section img {
 figcaption {
     background-color: rgb(84, 11, 11);
     color: #fff;
+    text-shadow: 3px 1px 2px black, 3px 0 5px white;
     font-family: var(--paragraph-font);
     font-style: italic;
     font-size: small;
@@ -293,17 +396,39 @@ figcaption {
     text-align: center;
     width: 100%;
     box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.customer-information {
+    background-image: url('../images/customer-info.gif');
+    background-size: cover;
+}
+
+.customer-information h2 {
+    color: #f1c40f; 
+    text-shadow: 
+        1px 1px 2px rgba(0, 0, 0, 0.6), 
+        2px 2px 4px rgba(0, 0, 0, 0.6), 
+        3px 3px 6px rgba(0, 0, 0, 0.8); 
+    margin-bottom: 20px; 
+    margin-bottom: 20px; 
+    font-size: 2rem;
 }
 
 main {
     padding: 20px;
+    
 }
 
+main h1{
+    text-shadow: 3px 1px 2px rgb(253, 249, 249);
+}
 /* Footer Styles */
 footer {
     padding: 10px 0;
-    color: var(--accent1-color);
-    background-color: #f725a7;
+    color: rgb(236, 223, 223);
+    background-image: url('../images/footer-background.gif');
+    background-size: cover;
     justify-content: space-between;
     align-items: center;
     display: grid;
@@ -315,6 +440,7 @@ footer p {
     margin: 10px 0;
     grid-column: 1/4;
     text-align: right;
+    text-shadow: 3px 1px 2px black;
 }
 
 footer .sociallinks {
@@ -322,12 +448,20 @@ footer .sociallinks {
     grid-column: 4/5;
     grid-row: 1/1;
     background-color: transparent;
+    background-image: none;
     border: transparent;
+    box-shadow: none;
 }
 
 footer .sociallinks a {
     text-decoration: none;
 }
+
+footer .sociallinks a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+
 
 footer .sociallinks img {
     max-height: 50px;
@@ -338,23 +472,34 @@ footer nav a {
 }
 
 .form-info {
-    padding: 0%;
+    padding: 20px;
 }
 .form-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 form {
     display: flex;
     flex-direction: column;
     border: 1px solid rgb(32, 33, 34);
-    padding: 20px;
+    padding: 30px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.6), /* Semi-transparent black */
+        rgba(0, 0, 0, 0.6) /* Semi-transparent black */
+    );
+    color: #f1c40f; 
+    text-shadow: 
+    1px 1px 2px rgba(0, 0, 0, 0.6), 
+    2px 2px 4px rgba(0, 0, 0, 0.6), 
+    3px 3px 6px rgba(0, 0, 0, 0.8); 
+    font-size: 1.2rem;
 }
 
 .radio-container {
@@ -377,12 +522,14 @@ form {
 button[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #007BFF;
+    background-color: #c40fa6;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1.2rem;
+    font-family: var(--heading-font);
+    font-weight: bold;
 }
 
 button[type="submit"]:hover {
@@ -395,6 +542,25 @@ button[type="submit"]:hover {
     grid-column: 1 / -1; 
     justify-self: center; 
     align-self: center; 
+
+}
+
+.wireframe p {
+    text-shadow: none;
+    color:white;
+    font-weight: bold;
+}
+
+.wireframe a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 3px 0px 3px black;
+}
+
+.wireframe a:hover {
+    text-decoration: underline;
+    background-color: #0e2946; /* Darker color on hover */
+    border-radius: 4px; /* Slightly rounded corners on hover */
 }
 
 /* Featured Trips Section */
@@ -471,100 +637,125 @@ button[type="submit"]:hover {
 
 /* Style for the trips section */
 .trips {
+    text-align: center; 
+    margin: 20px auto; 
     padding: 20px;
-    background-color: #f9f9f9; /* Light background color for the section */
-    text-align: center; /* Center the heading */
+    background-image: url('../images/trips-table-background.gif'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Ensures the text is readable against the background */
+    border-radius: 8px;
 }
+
+
 
 .trips h2 {
     font-family: var(--heading-font);
-    color: #333;
-    margin-bottom: 20px; /* Space below the heading */
+    color: #fef26e;
+    text-shadow: 
+        1px 1px 2px rgba(0, 0, 0, 0.6), 
+        2px 2px 4px rgba(0, 0, 0, 0.6), 
+        3px 3px 6px rgba(0, 0, 0, 0.8); 
+    margin-bottom: 20px; 
+    font-size: 1.7rem;
+    font-weight: bold;
 }
 
 /* Flexbox layout for trips container */
 .trips-content {
     display: flex;
-    flex-wrap: wrap; /* Allows wrapping to new lines */
-    justify-content: space-between; /* Distributes space between items */
-    gap: 20px; /* Space between items */
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    gap: 20px; 
 }
 
 .trip {
     display: flex;
-    flex-direction: column; /* Stack image and text vertically */
+    flex-direction: column; 
     align-items: center;
     text-align: center;
-    width: calc(33% - 20px); /* Three columns, adjust width for spacing */
-    background-color: white;
-    border-radius: 8px;
+    width: calc(33% - 20px); 
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.6), /* Semi-transparent black */
+        rgba(0, 0, 0, 0.6) /* Semi-transparent black */
+    );
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px; /* Space between rows */
+    margin-bottom: 20px; 
 }
 
 .trip img {
     width: 100%;
-    height: 200px; /* Fixed height for all images */
-    object-fit: cover; /* Cover the element while maintaining aspect ratio */
-    border-radius: 8px;
+    height: 200px; 
+    object-fit: cover; 
 }
 
 .trip h3 {
     font-family: var(--heading-font);
     font-size: 1.2rem;
-    color: #333;
+    color: #e4dc97;
     margin: 10px 0 5px;
 }
 
 .trip p {
     font-family: var(--paragraph-font);
     font-size: 1rem;
-    color: #666;
+    color: #f2e4e4;
     padding: 0 10px 10px;
 }
 
 /* Style for the trips table section */
 .trips-table {
-    text-align: center; /* Center the heading and table */
-    margin: 20px auto; /* Center the section and add margin */
+    text-align: center; 
+    margin: 20px auto; 
     padding: 20px;
-    background-color: #f9f9f9; /* Light background color for the section */
-    border-radius: 8px; /* Rounded corners for the section */
+    background-image: url('../images/trips-background.gif'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Ensures the text is readable against the background */
+    border-radius: 8px;
 }
+
 
 /* Style for the heading */
 .trips-table h2 {
-    margin-bottom: 20px; /* Add space between the heading and the table */
-    color: #333; /* Dark color for the heading text */
+    margin-bottom: 20px; 
+    color: #fff9b4;
+    text-shadow: 6px 4px 5px rgb(222, 15, 15), 4px 3px 5px black;
+    font-size: 1.7rem;
 }
 
 /* Style for the table */
 .trips-table table {
-    width: 80%; /* Adjust width as needed */
-    margin: 0 auto; /* Center the table horizontally */
-    border-collapse: collapse; /* Remove spacing between borders */
+    width: 80%; 
+    margin: 0 auto; 
+    border-collapse: collapse; 
     margin-bottom: 20px;
 }
 
 /* Style for table headings */
 .trips-table th {
-    background-color: #333; /* Dark background for table headers */
-    color: #fff; /* White text color for table headers */
-    padding: 10px; /* Add padding to table headers */
-    border: 2px solid #bea0a0; /* Light border for table headers */
+    background-color: #333; 
+    color: #fff; 
+    padding: 10px; 
+    border: 2px solid #bea0a0; 
+    font-size: 1.2rem;
 }
 
 /* Style for table cells */
 .trips-table td {
-    padding: 10px; /* Add padding to table cells */
-    border: 2px solid #bea0a0; /* Light border for table cells */
-    color: #666; /* Text color for table cells */
+    padding: 10px; 
+    border: 2px solid #bea0a0; 
+    color: #faf9f9; 
+    text-shadow: 5px 4px 5px rgb(131, 6, 6), 4px 3px 5px black;
+    font-weight: bold;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.6), /* Semi-transparent black */
+        rgba(0, 0, 0, 0.6) /* Semi-transparent black */
+    );
+    font-size: 1rem;
 }
 
-/* Style for table rows */
-.trips-table tr:nth-child(even) {
-    background-color: #f2f2f2; /* Alternating row color for better readability */
-}
+
 
 /* Hero Section */
 .hero {
@@ -598,7 +789,9 @@ button[type="submit"]:hover {
 
 .newsletter h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: rgb(234, 223, 225);
+    text-shadow: 3px 1px 2px rgb(241, 233, 233);
+    font-size: 1.8rem;
 }
 
 .newsletter form {
@@ -607,11 +800,32 @@ button[type="submit"]:hover {
     align-items: center;
     max-width: 500px;
     margin: 0 auto;
+    border: 1px solid white;
+    background-image: url('../images/newsletter_color.jpg');
+    background-size: cover;
+}
+
+.newsletter form::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 8px; 
+    z-index: 1; 
+}
+
+.newsletter form > * {
+    position: relative; 
+    z-index: 2;
 }
 
 .newsletter label {
     margin: 10px 0;
     font-size: 1.2em;
+    text-shadow: 3px 3px 5px black;
 }
 
 .newsletter input[type="text"],
@@ -622,9 +836,12 @@ button[type="submit"]:hover {
     border: 1px solid #ddd;
     width: 100%;
     max-width: 300px;
+    text-shadow: 3px 3px 5px black;
 }
 
 .newsletter button {
+    margin-top: 30px;
+    margin-bottom: 20px;
     padding: 10px 20px;
     background-color: var(--primary-color);
     color: #fff;
@@ -632,6 +849,9 @@ button[type="submit"]:hover {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
+    font-family: var(--heading-font);
+    font-weight: bold;
+    text-shadow: 3px 3px 5px black;
 }
 
 .newsletter button:hover {
@@ -651,16 +871,16 @@ button[type="submit"]:hover {
 }
 
 .cta-button {
-    display: block; /* Use block to make the button occupy full width or fit its content */
+    display: block; 
     padding: 10px 20px;
     background-color: var(--primary-color);
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    text-align: center; /* Center text within the button */
-    max-width: fit-content; /* Adjusts width to fit content */
-    margin: 0 auto; /* Center the button horizontally */
+    text-align: center; 
+    max-width: fit-content; 
+    margin: 0 auto; 
 }
 
 .cta-button:hover {
@@ -673,13 +893,45 @@ button[type="submit"]:hover {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 20px;
+    background-image: url('../images/river-evening-wide.jpg');
+    background-size: cover;
 }
 
 .grid-item {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
+
     text-align: center;
+    background-image: linear-gradient(
+        to right,
+        rgb(122, 51, 78), /* Light yellow-green with 70% opacity */
+        rgba(110, 60, 210, 0.847),
+        rgba(67, 167, 96, 0.847) /* Bright pink with 70% opacity */
+    );
+    background-size: cover; /* Ensure the gradient covers the entire section */
+    background-position: center; /* Center the gradient within the section */
+    padding: 20px; /* Padding inside the section */
+    color: white; /* Ensure text is readable */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    position: relative; /* Position relative to contain the pseudo-element */
+    margin: 10px 0; /* Space around the section */
+}
+
+/* Semi-transparent overlay for better text readability */
+.grid-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 254, 254, 0.4); /* Black with 40% opacity for overlay */
+    border-radius: 8px; /* Matches the section's rounded corners */
+    z-index: 1; /* Ensure overlay is below content */
+}
+
+/* Ensure content appears above the overlay */
+.grid-item > * {
+    position: relative; /* Ensure content is above the overlay */
+    z-index: 2;
 }
 
 .grid-item img {
@@ -690,11 +942,190 @@ button[type="submit"]:hover {
 
 .grid-item h3 {
     font-family: var(--heading-font);
-    color: var(--secondary-color);
+    color: #edc217; /* Bright color for visibility */
+    text-shadow: 
+        1px 1px 2px rgba(0, 0, 0, 0.6), /* Light shadow */
+        2px 2px 4px rgba(0, 0, 0, 0.7), /* Slightly darker shadow */
+        3px 3px 6px rgba(0, 0, 0, 0.8); /* Darkest shadow for gradient effect */
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 1.5rem;
 }
 
 .grid-item p {
     font-family: var(--paragraph-font);
-    color: var(--font-color);
-    font-size: 1em;
+    color: white;
+    text-shadow: 
+        1px 1px 2px rgba(0, 0, 0, 0.4), /* Light shadow */
+        2px 2px 4px rgba(0, 0, 0, 0.6), /* Slightly darker shadow */
+        3px 3px 6px rgba(0, 0, 0, 0.8); /* Darkest shadow for gradient effect */
+    font-size: 1.2em;
 }
+
+.newsletter {
+    background-image: url('../images/newsletter-bg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    color: white; 
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.newsletter::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1; 
+}
+
+.newsletter * {
+    position: relative;
+    z-index: 2; 
+}
+
+.newsletter h2 {
+    text-shadow: 3px 1px 2px black, 3px 0 5px white;
+}
+
+.newsletter p {
+    text-shadow: 3px 3px 5px darkred, 0 0 5px rgba(178, 173, 173, 0.5);
+}
+
+
+/* Style for History Section */
+.history-section {
+    background-image: url('../images/history-bg.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    position: relative; 
+    padding: 20px; 
+    color: white;
+    border-radius: 8px; 
+    margin: 20px 0; 
+}
+
+/* Semi-transparent overlay for better text readability */
+.history-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+    border-radius: 8px; 
+    z-index: 1; 
+}
+
+/* Ensure content appears above the overlay */
+.history-section > * {
+    position: relative; 
+    z-index: 2;
+}
+
+/* Style for h2 heading */
+.history-section h2 {
+    color: #f1c40f; 
+    text-shadow: 
+        1px 1px 2px rgba(0, 0, 0, 0.6), 
+        2px 2px 4px rgba(0, 0, 0, 0.6), 
+        3px 3px 6px rgba(0, 0, 0, 0.8); 
+    margin-bottom: 20px; 
+    margin-bottom: 20px; 
+    font-size: 2rem;
+}
+
+/* Style for paragraph text */
+.history-section p {
+    color: #ffffff; 
+    line-height: 1.6; 
+    text-shadow: 
+        1px 1px 2px rgba(0, 0, 0, 0.4), 
+        2px 2px 4px rgba(0, 0, 0, 0.6), 
+        3px 3px 6px rgba(0, 0, 0, 0.8); 
+}
+
+/* Center the image in the paragraph and ensure text wraps around it */
+.history-section .history-image {
+    display: block; 
+    margin: 10px auto; 
+  
+   
+    border-radius: 8px; 
+}
+
+.history-section img {
+    height: 1000px;
+}
+
+
+/* Style for Adventure Awaits You section */
+.adventure-awaits {
+    background-image: url('../images/adventure-bg.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    position: relative; 
+    padding: 20px;
+    color: white; 
+    border-radius: 8px;
+    margin: 20px 0; 
+}
+
+/* Semi-transparent overlay for better text readability */
+.adventure-awaits::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 8px; 
+    z-index: 1; 
+}
+
+/* Ensure content appears above the overlay */
+.adventure-awaits > * {
+    position: relative; 
+    z-index: 2;
+}
+
+/* Style for h2 heading */
+.adventure-awaits h2 {
+    color: #f1c40f; 
+    text-shadow: 
+        1px 1px 2px rgba(0, 0, 0, 0.6), 
+        2px 2px 4px rgba(0, 0, 0, 0.7), 
+        3px 3px 6px rgba(0, 0, 0, 0.8); 
+    margin-bottom: 20px; 
+    font-size: 2rem;
+}
+
+
+
+
+/* Style for image within figure */
+.grid-container img {
+    display: block; 
+    width: 100%; 
+    height: auto;
+}
+
+/* Style for figcaption */
+.grid-container figcaption {
+    color: #ffffff; 
+    text-shadow: 
+        1px 1px 2px rgba(0, 0, 0, 0.4), 
+        2px 2px 4px rgba(0, 0, 0, 0.6), 
+        3px 3px 6px rgba(0, 0, 0, 0.8); 
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 10px; 
+    text-align: center;
+}
+
