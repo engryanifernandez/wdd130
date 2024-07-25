@@ -279,7 +279,7 @@ section img {
 
 .grid-container img {
     max-width: 200px;
-    height: auto;
+    height: 200px;
     align-items: center;
 }
 
