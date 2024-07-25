@@ -448,7 +448,7 @@ button[type="submit"]:hover, .featured-trips .trip-card .cta-button:hover, .news
 /* Style for the trips section */
 .trips {
     text-align: center; 
-    margin: 20px; 
+    margin: 20px auto; 
     padding: 10px;
     background-image: url('../images/trips-table-background.gif'); 
     background-size: cover;
