@@ -62,8 +62,8 @@ nav {
     grid-row: 3/3;
     justify-content: space-around;
     background-image: linear-gradient(
-        rgba(0, 0, 0, 0.6), /* Semi-transparent black */
-        rgba(0, 0, 0, 0.6) /* Semi-transparent black */
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6) 
     );
     padding: 10px; 
     border-radius: 8px; 
@@ -87,8 +87,8 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-    background-color: #0056b3; /* Darker color on hover */
-    border-radius: 4px; /* Slightly rounded corners on hover */
+    background-color: #0056b3; 
+    border-radius: 4px; 
 }
 
 /* Hero Section */
@@ -107,18 +107,18 @@ nav a:hover {
 
 .hero h1 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
     position: absolute;
     top: 10%;
     left: 51%;
     transform: translate(-50%, -50%);
     font-size: 2rem;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px 20px;
     background-color: rgba(0,0,0,0.5);
     background-size: cover;
     background-position: center;
     text-shadow: none;
+    color: #fff;
 }
 
 /* Article Styles */
@@ -191,8 +191,8 @@ main p {
     align-items: center;
     justify-content: space-between;
     background-image: linear-gradient(
-        rgba(0, 0, 0, 0.6), /* Semi-transparent black */
-        rgba(0, 0, 0, 0.6) /* Semi-transparent black */
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6) 
     );
     background-size: cover;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -315,17 +315,17 @@ section img {
 .meet-staff-container {
     align-items: center;
     background-image: linear-gradient(
-        rgba(0, 0, 0, 0.6), /* Semi-transparent black */
-        rgba(0, 0, 0, 0.6) /* Semi-transparent black */
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6) 
     );
     background-size: cover;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px; /* Adjust the gap between grid items */
-    justify-content: center; /* Center items horizontally */
-    padding: 0px; /* Add padding around the grid */
-    max-width: 1200px; /* Optional: Set a max-width for large screens */
-    margin: 0 auto; /* Center grid container */
+    gap: 20px; 
+    justify-content: center; 
+    padding: 0px;
+    max-width: 1200px; 
+    margin: 0 auto; 
     border-radius: 8px;
 }
 
@@ -353,17 +353,17 @@ section img {
 .grid-container {
     align-items: center;
     background-image: linear-gradient(
-        rgba(0, 0, 0, 0.6), /* Semi-transparent black */
-        rgba(0, 0, 0, 0.6) /* Semi-transparent black */
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6) 
     );
     background-size: cover;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px; /* Adjust the gap between grid items */
-    justify-content: center; /* Center items horizontally */
-    padding: 0px; /* Add padding around the grid */
-    max-width: 1200px; /* Optional: Set a max-width for large screens */
-    margin: 0 auto; /* Center grid container */
+    gap: 20px; 
+    justify-content: center; 
+    padding: 0px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
     border-radius: 8px;
 }
 
@@ -383,6 +383,7 @@ section img {
     max-width: 200px;
     height: 200px;
     align-items: center;
+    display: block; 
 }
 
 figcaption {
@@ -491,8 +492,8 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
     background-image: linear-gradient(
-        rgba(0, 0, 0, 0.6), /* Semi-transparent black */
-        rgba(0, 0, 0, 0.6) /* Semi-transparent black */
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6) 
     );
     color: #f1c40f; 
     text-shadow: 
@@ -559,8 +560,8 @@ button[type="submit"]:hover {
 
 .wireframe a:hover {
     text-decoration: underline;
-    background-color: #0e2946; /* Darker color on hover */
-    border-radius: 4px; /* Slightly rounded corners on hover */
+    background-color: #0e2946; 
+    border-radius: 4px; 
 }
 
 /* Featured Trips Section */
@@ -640,10 +641,10 @@ button[type="submit"]:hover {
     text-align: center; 
     margin: 20px auto; 
     padding: 20px;
-    background-image: url('../images/trips-table-background.gif'); /* Replace with your image */
+    background-image: url('../images/trips-table-background.gif'); 
     background-size: cover;
     background-position: center;
-    color: #fff; /* Ensures the text is readable against the background */
+    color: #fff; 
     border-radius: 8px;
 }
 
@@ -676,8 +677,8 @@ button[type="submit"]:hover {
     text-align: center;
     width: calc(33% - 20px); 
     background-image: linear-gradient(
-        rgba(0, 0, 0, 0.6), /* Semi-transparent black */
-        rgba(0, 0, 0, 0.6) /* Semi-transparent black */
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6) 
     );
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px; 
@@ -708,10 +709,10 @@ button[type="submit"]:hover {
     text-align: center; 
     margin: 20px auto; 
     padding: 20px;
-    background-image: url('../images/trips-background.gif'); /* Replace with your image */
+    background-image: url('../images/trips-background.gif'); 
     background-size: cover;
     background-position: center;
-    color: #fff; /* Ensures the text is readable against the background */
+    color: #fff; 
     border-radius: 8px;
 }
 
@@ -749,35 +750,10 @@ button[type="submit"]:hover {
     text-shadow: 5px 4px 5px rgb(131, 6, 6), 4px 3px 5px black;
     font-weight: bold;
     background-image: linear-gradient(
-        rgba(0, 0, 0, 0.6), /* Semi-transparent black */
-        rgba(0, 0, 0, 0.6) /* Semi-transparent black */
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6) 
     );
     font-size: 1rem;
-}
-
-
-
-/* Hero Section */
-.hero {
-    position: relative;
-    text-align: center;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-}
-
-.hero h1 {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-family: var(--heading-font);
-    font-size: 2.5em;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 10px;
 }
 
 /* Newsletter Signup */
@@ -902,17 +878,17 @@ button[type="submit"]:hover {
     text-align: center;
     background-image: linear-gradient(
         to right,
-        rgb(122, 51, 78), /* Light yellow-green with 70% opacity */
+        rgb(122, 51, 78), 
         rgba(110, 60, 210, 0.847),
-        rgba(67, 167, 96, 0.847) /* Bright pink with 70% opacity */
+        rgba(67, 167, 96, 0.847) 
     );
-    background-size: cover; /* Ensure the gradient covers the entire section */
-    background-position: center; /* Center the gradient within the section */
-    padding: 20px; /* Padding inside the section */
-    color: white; /* Ensure text is readable */
-    border-radius: 8px; /* Optional: Adds rounded corners */
-    position: relative; /* Position relative to contain the pseudo-element */
-    margin: 10px 0; /* Space around the section */
+    background-size: cover; 
+    background-position: center; 
+    padding: 20px; 
+    color: white; 
+    border-radius: 8px; 
+    position: relative; 
+    margin: 10px 0; 
 }
 
 /* Semi-transparent overlay for better text readability */
@@ -923,14 +899,14 @@ button[type="submit"]:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 254, 254, 0.4); /* Black with 40% opacity for overlay */
-    border-radius: 8px; /* Matches the section's rounded corners */
-    z-index: 1; /* Ensure overlay is below content */
+    background: rgba(255, 254, 254, 0.4); 
+    border-radius: 8px; 
+    z-index: 1; 
 }
 
 /* Ensure content appears above the overlay */
 .grid-item > * {
-    position: relative; /* Ensure content is above the overlay */
+    position: relative; 
     z-index: 2;
 }
 
@@ -942,12 +918,12 @@ button[type="submit"]:hover {
 
 .grid-item h3 {
     font-family: var(--heading-font);
-    color: #edc217; /* Bright color for visibility */
+    color: #edc217; 
     text-shadow: 
-        1px 1px 2px rgba(0, 0, 0, 0.6), /* Light shadow */
-        2px 2px 4px rgba(0, 0, 0, 0.7), /* Slightly darker shadow */
-        3px 3px 6px rgba(0, 0, 0, 0.8); /* Darkest shadow for gradient effect */
-    margin-bottom: 20px; /* Space below the heading */
+        1px 1px 2px rgba(0, 0, 0, 0.6), 
+        2px 2px 4px rgba(0, 0, 0, 0.7), 
+        3px 3px 6px rgba(0, 0, 0, 0.8); 
+    margin-bottom: 20px; 
     font-size: 1.5rem;
 }
 
@@ -955,9 +931,9 @@ button[type="submit"]:hover {
     font-family: var(--paragraph-font);
     color: white;
     text-shadow: 
-        1px 1px 2px rgba(0, 0, 0, 0.4), /* Light shadow */
-        2px 2px 4px rgba(0, 0, 0, 0.6), /* Slightly darker shadow */
-        3px 3px 6px rgba(0, 0, 0, 0.8); /* Darkest shadow for gradient effect */
+        1px 1px 2px rgba(0, 0, 0, 0.4), 
+        2px 2px 4px rgba(0, 0, 0, 0.6), 
+        3px 3px 6px rgba(0, 0, 0, 0.8); 
     font-size: 1.2em;
 }
 
@@ -1055,15 +1031,12 @@ button[type="submit"]:hover {
 .history-section .history-image {
     display: block; 
     margin: 10px auto; 
-  
-   
     border-radius: 8px; 
 }
 
 .history-section img {
     height: 1000px;
 }
-
 
 /* Style for Adventure Awaits You section */
 .adventure-awaits {
@@ -1107,16 +1080,6 @@ button[type="submit"]:hover {
     font-size: 2rem;
 }
 
-
-
-
-/* Style for image within figure */
-.grid-container img {
-    display: block; 
-    width: 100%; 
-    height: auto;
-}
-
 /* Style for figcaption */
 .grid-container figcaption {
     color: #ffffff; 
@@ -1128,4 +1091,3 @@ button[type="submit"]:hover {
     padding: 10px; 
     text-align: center;
 }
-
