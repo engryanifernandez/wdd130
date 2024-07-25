@@ -169,15 +169,6 @@ main p {
     background-size: cover;
 }
 
-.send-message h2 {
-    color: #3bf8d2;
-    text-shadow: 
-        1px 1px 2px rgba(0, 0, 0, 0.6), 
-        2px 2px 4px rgba(0, 0, 0, 0.6), 
-        3px 3px 6px rgba(0, 0, 0, 0.8); 
-    font-size: 2rem;
-}
-
 .send-message p {
     color: #eeb32a;
     text-shadow: 4px 3px 3px rgb(68, 2, 2), 3px 0px 2px rgb(185, 61, 61);
@@ -282,33 +273,9 @@ section {
     margin: 40px 0;
 }
 
-section h2 {
-    font-family: var(--heading-font);
-    color: var(--secondary-color);
-}
-section p {
-    font-size: 1rem;
-    color: var(--font-color);
-}
-
-/* Image Gallery */
-section img {
-    height: auto;
-    margin: 10px 0;
-}
-
 .meet-staff {
     background-image: url('../images/staff-background.gif');
     background-size: cover;
-}
-
-.meet-staff h2{
-    color: white;
-    text-shadow: 
-        1px 1px 2px rgba(0, 0, 0, 0.6), 
-        2px 2px 4px rgba(0, 0, 0, 0.6), 
-        3px 3px 6px rgba(0, 0, 0, 0.8); 
-    font-size: 2rem;
 }
 
 .meet-staff-container {
@@ -404,7 +371,7 @@ figcaption {
     background-size: cover;
 }
 
-.customer-information h2 {
+{
     color: #f1c40f; 
     text-shadow: 
         1px 1px 2px rgba(0, 0, 0, 0.6), 
@@ -614,7 +581,7 @@ button[type="submit"]:hover {
     border-radius: 0 0 8px 8px;
 }
 
-.featured-trips .trip-card .cta-button:hover {
+.featured-trips .trip-card .cta-button:hover, .newsletter button:hover, .cta-button:hover {
     background-color: var(--accent1-color);
 }
 
@@ -645,20 +612,6 @@ button[type="submit"]:hover {
     background-position: center;
     color: #fff; 
     border-radius: 8px;
-}
-
-
-
-.trips h2 {
-    font-family: var(--heading-font);
-    color: #fef26e;
-    text-shadow: 
-        1px 1px 2px rgba(0, 0, 0, 0.6), 
-        2px 2px 4px rgba(0, 0, 0, 0.6), 
-        3px 3px 6px rgba(0, 0, 0, 0.8); 
-    margin-bottom: 20px; 
-    font-size: 1.7rem;
-    font-weight: bold;
 }
 
 /* Flexbox layout for trips container */
@@ -715,15 +668,6 @@ button[type="submit"]:hover {
     border-radius: 8px;
 }
 
-
-/* Style for the heading */
-.trips-table h2 {
-    margin-bottom: 20px; 
-    color: #fff9b4;
-    text-shadow: 6px 4px 5px rgb(222, 15, 15), 4px 3px 5px black;
-    font-size: 1.7rem;
-}
-
 /* Style for the table */
 .trips-table table {
     width: 80%; 
@@ -757,16 +701,27 @@ button[type="submit"]:hover {
 
 /* Newsletter Signup */
 .newsletter {
-    background-color: #f9f9f9;
-    padding: 20px;
+    background-image: url('../images/newsletter-bg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    color: white; 
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px 0;
     text-align: center;
 }
 
-.newsletter h2 {
-    font-family: var(--heading-font);
-    color: rgb(234, 223, 225);
-    text-shadow: 3px 1px 2px rgb(241, 233, 233);
-    font-size: 1.8rem;
+.newsletter::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1; 
 }
 
 .newsletter form {
@@ -792,7 +747,7 @@ button[type="submit"]:hover {
     z-index: 1; 
 }
 
-.newsletter form > * {
+.newsletter form > *, .grid-item > *, .history-section > *, .adventure-awaits > *, .newsletter *  {
     position: relative; 
     z-index: 2;
 }
@@ -829,10 +784,6 @@ button[type="submit"]:hover {
     text-shadow: 3px 3px 5px black;
 }
 
-.newsletter button:hover {
-    background-color: var(--accent1-color);
-}
-
 /* Call to Action */
 .cta {
     background-color: #e9c46a;
@@ -856,10 +807,6 @@ button[type="submit"]:hover {
     text-align: center; 
     max-width: fit-content; 
     margin: 0 auto; 
-}
-
-.cta-button:hover {
-    background-color: var(--accent1-color);
 }
 
 /* Grid Layout */
@@ -903,12 +850,6 @@ button[type="submit"]:hover {
     z-index: 1; 
 }
 
-/* Ensure content appears above the overlay */
-.grid-item > * {
-    position: relative; 
-    z-index: 2;
-}
-
 .grid-item img {
     width: 100%;
     height: 350px;
@@ -936,37 +877,7 @@ button[type="submit"]:hover {
     font-size: 1.2em;
 }
 
-.newsletter {
-    background-image: url('../images/newsletter-bg.jpg'); 
-    background-size: cover;
-    background-position: center;
-    padding: 40px;
-    color: white; 
-    position: relative;
-    border-radius: 8px;
-    overflow: hidden;
-    margin: 20px 0;
-}
 
-.newsletter::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1; 
-}
-
-.newsletter * {
-    position: relative;
-    z-index: 2; 
-}
-
-.newsletter h2 {
-    text-shadow: 3px 1px 2px black, 3px 0 5px white;
-}
 
 .newsletter p {
     text-shadow: 3px 3px 5px darkred, 0 0 5px rgba(178, 173, 173, 0.5);
@@ -998,20 +909,13 @@ button[type="submit"]:hover {
     z-index: 1; 
 }
 
-/* Ensure content appears above the overlay */
-.history-section > * {
-    position: relative; 
-    z-index: 2;
-}
-
 /* Style for h2 heading */
-.history-section h2 {
+.history-section h2, .adventure-awaits h2, .customer-information h2, .meet-staff h2, .send-message h2, .trips h2, .trips-table h2, .newsletter h2 {
     color: #f1c40f; 
     text-shadow: 
         1px 1px 2px rgba(0, 0, 0, 0.6), 
         2px 2px 4px rgba(0, 0, 0, 0.6), 
         3px 3px 6px rgba(0, 0, 0, 0.8); 
-    margin-bottom: 20px; 
     margin-bottom: 20px; 
     font-size: 2rem;
 }
@@ -1060,23 +964,6 @@ button[type="submit"]:hover {
     background: rgba(0, 0, 0, 0.5); 
     border-radius: 8px; 
     z-index: 1; 
-}
-
-/* Ensure content appears above the overlay */
-.adventure-awaits > * {
-    position: relative; 
-    z-index: 2;
-}
-
-/* Style for h2 heading */
-.adventure-awaits h2 {
-    color: #f1c40f; 
-    text-shadow: 
-        1px 1px 2px rgba(0, 0, 0, 0.6), 
-        2px 2px 4px rgba(0, 0, 0, 0.7), 
-        3px 3px 6px rgba(0, 0, 0, 0.8); 
-    margin-bottom: 20px; 
-    font-size: 2rem;
 }
 
 /* Style for figcaption */
